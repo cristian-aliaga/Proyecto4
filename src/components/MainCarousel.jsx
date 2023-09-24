@@ -7,7 +7,7 @@ export const MainCarousel = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-75 rounded mx-auto bg-secondary"
-                    src="./public/images/tun_1.jpg"
+                    src="./images/tun_1.jpg"
                     alt="Vegetariano"
                 />
                 <Carousel.Caption>
@@ -18,7 +18,7 @@ export const MainCarousel = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-75 rounded mx-auto"
-                    src="./public/images/tun_2.jpg"
+                    src="./images/tun_2.jpg"
                     alt="Carnes"
                 />
                 <Carousel.Caption>
@@ -29,7 +29,7 @@ export const MainCarousel = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-75 rounded mx-auto"
-                    src="./public/images/tun_3.jpg"
+                    src="./images/tun_3.jpg"
                     alt="Postres"
                 />
                 <Carousel.Caption>
