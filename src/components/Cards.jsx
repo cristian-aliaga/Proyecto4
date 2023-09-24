@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 
 export const Cards = () => {
     return (
-        <CardGroup style={{ width: '1200px' }} className="rounded mx-auto bg-secondary">
+        <CardGroup style={{ width: '1425px' }} className="rounded mx-auto bg-secondary">
             <Card className="bg-secondary">
                 <Card.Img variant="top" src="./images/loc_1.jpg" />
                 <Card.Body>
