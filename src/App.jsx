@@ -7,6 +7,7 @@ import { Book } from "./pages/Book"
 import { About } from "./pages/About"
 import { Branches } from "./pages/branches"
 import { Rules } from "./pages/Rules"
+import { MainCarousel } from "./components/MainCarousel"
 
 function App() {
   return (
