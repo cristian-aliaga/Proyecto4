@@ -7,7 +7,7 @@ export const Cards = () => {
     return (
         <CardGroup style={{ width: '1200px' }} className="rounded mx-auto bg-secondary">
             <Card className="bg-secondary">
-                <Card.Img variant="top" src="./public/images/loc_1.jpg" />
+                <Card.Img variant="top" src="./images/loc_1.jpg" />
                 <Card.Body>
                     <Card.Title class="text-white"><h4>Sucursal Puerto Montt</h4></Card.Title>
                     <Card.Text class="text-light">
@@ -19,7 +19,7 @@ export const Cards = () => {
                 </Card.Footer>
             </Card>
             <Card className="bg-secondary">
-                <Card.Img variant="top" src="./public/images/loc_2.jpg" />
+                <Card.Img variant="top" src="./images/loc_2.jpg" />
                 <Card.Body>
                     <Card.Title class="text-white"> <h4>Sucursal Codillera</h4></Card.Title>
                     <Card.Text class="text-light">
@@ -31,7 +31,7 @@ export const Cards = () => {
                 </Card.Footer>
             </Card>
             <Card className="bg-secondary">
-                <Card.Img variant="top" src="./public/images/loc_3.jpg" />
+                <Card.Img variant="top" src="./images/loc_3.jpg" />
                 <Card.Body>
                     <Card.Title class="text-white"><h4>Sucursal Costa</h4></Card.Title>
                     <Card.Text class="text-light">
