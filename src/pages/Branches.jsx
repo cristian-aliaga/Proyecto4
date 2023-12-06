@@ -5,9 +5,6 @@ import { Footer } from '../components/Footer'
 export const Branches = () => {
   return (
     <>
-      <div>
-        <Footer />
-      </div>
     </>
   )
 }
