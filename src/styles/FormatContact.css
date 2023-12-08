@@ -1,0 +1,10 @@
+.div {
+    display: grid;
+    justify-content: Center;
+    background-color: rgba(128, 128, 128, 0.39);
+    margin: 1%;
+}
+
+.form {
+    margin: 2%;
+}

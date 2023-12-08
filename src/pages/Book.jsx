@@ -1,7 +1,11 @@
 import React from 'react'
+import { BookComponent } from '../components/BookComponent'
 
 export const Book = () => {
   return (
-    <div>Book</div>
+    <>
+    <h1>Reservas</h1>
+    <BookComponent />
+    </>
   )
 }
