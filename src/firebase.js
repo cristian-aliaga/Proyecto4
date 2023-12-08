@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore"
 
 const firebaseConfig = {
-    apiKey: process.env.apiKey,
-    authDomain: process.env.authDomain,
-    projectId: process.env.projectId,
-    storageBucket: process.env.storageBucket,
-    messagingSenderId: process.env.messagingSenderId,
-    appId: process.env.appId
+    apiKey: import.meta.env.VITE_APP_APIKEY,
+    authDomain: import.meta.env.VITE_APP_AUTHDOMAIN,
+    projectId: import.meta.env.VITE_APP_PROYECTID,
+    storageBucket: import.meta.env.VITE_APP_STORAGEBUCKET,
+    messagingSenderId: import.meta.env.VITE_APP_MESSAGINGSENDERID,
+    appId: import.meta.env.VITE_APP_APPID
 };
 
 const app = initializeApp(firebaseConfig);
