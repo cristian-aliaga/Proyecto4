@@ -8,7 +8,6 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-// import '../styles/Blog.css'
 
 export const BlogComponent = () => {
     const blocNote = collection(db, 'Blog')

@@ -6,11 +6,13 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Dropdown from 'react-bootstrap/Dropdown';
+import Modal from 'react-bootstrap/Modal';
 
 export const MenuComponent = () => {
     const menuDB = collection(db, 'Menu')
     const [menus, setMenu] = useState([])
     const [menusFilter, setMenuFilter] = useState([])
+    const [show, setShow] = useState(false);
 
     const getMenu = async () => {
         const data = await getDocs(menuDB)
@@ -23,6 +25,7 @@ export const MenuComponent = () => {
             return menu.categoria == e
         }
         setMenuFilter(resultFilter)
+        setShow(true)
     }
 
     useEffect(() => {
@@ -51,7 +54,7 @@ export const MenuComponent = () => {
                             <thead>
                                 <tr>
                                     <th>Categoria</th>
-                                    <th>Nombre</th>
+                                    <th>Producto</th>
                                     <th>Precio</th>
                                 </tr>
                             </thead>
@@ -65,10 +68,32 @@ export const MenuComponent = () => {
                                         </tr>
                                     ))
                                 }
+                            </tbody>
+                        </Table>
+                    </Col>
+                </Row>
+                <Modal
+                    show={show}
+                    onHide={() => setShow(false)}
+                    dialogClassName="modal-90w"
+                    aria-labelledby="example-custom-modal-styling-title">
+                    {/* <Modal.Header closeButton>
+                        <Modal.Title id="example-custom-modal-styling-title">
+                            Producto
+                        </Modal.Title>
+                    </Modal.Header> */}
+                    <Modal.Body>
+                        <Table striped bordered hover>
+                            <thead>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>Precio</th>
+                                </tr>
+                            </thead>
+                            <tbody>
                                 {
                                     menusFilter.map(menu => (
                                         <tr key={menu.id}>
-                                            <td>{menu.categoria}</td>
                                             <td>{menu.nombre}</td>
                                             <td>{menu.precio}</td>
                                         </tr>
@@ -76,8 +101,9 @@ export const MenuComponent = () => {
                                 }
                             </tbody>
                         </Table>
-                    </Col>
-                </Row>
+
+                    </Modal.Body>
+                </Modal>
             </Container>
         </>
     )
