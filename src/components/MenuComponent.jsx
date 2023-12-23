@@ -13,10 +13,13 @@ export const MenuComponent = () => {
     const [menus, setMenu] = useState([])
     const [menusFilter, setMenuFilter] = useState([])
     const [show, setShow] = useState(false);
+    const [loading, setLoading] = useState(true);
+
 
     const getMenu = async () => {
         const data = await getDocs(menuDB)
         setMenu(data.docs.map(doc => ({ ...doc.data(), id: doc.id })))
+        setLoading(false);
     }
 
     const handleSelect = (e) => {
@@ -31,6 +34,10 @@ export const MenuComponent = () => {
     useEffect(() => {
         getMenu()
     }, [])
+
+    if (loading) {
+        return <div><h3>Cargando Menu...Por favor espere.</h3></div>;
+    }
 
     return (
         <>
