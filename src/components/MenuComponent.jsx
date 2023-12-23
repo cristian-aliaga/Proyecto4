@@ -34,7 +34,6 @@ export const MenuComponent = () => {
 
     return (
         <>
-            <h1>Menú</h1>
             <Container>
                 <Row className="justify-content-md-center">
                     <Col md="auto">
@@ -51,6 +50,11 @@ export const MenuComponent = () => {
                             </Dropdown.Menu>
                         </Dropdown>
                         <Table striped bordered hover>
+                            <thead>
+                                <tr>
+                                    <th colSpan={4}><h3>Menú Restaurant</h3></th>
+                                </tr>
+                            </thead>
                             <thead>
                                 <tr>
                                     <th>Categoria</th>

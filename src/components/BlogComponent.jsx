@@ -18,7 +18,7 @@ export const BlogComponent = () => {
 
     const d = new Date();
     const fechaBlog = d.toDateString()
-    
+
     const createComent = async () => {
         await addDoc(commentRef, { fechaBlog, nombre, comentario })
         getBlog()
@@ -36,12 +36,17 @@ export const BlogComponent = () => {
 
     return (
         <>
-            <h1>Blog Clientes</h1>
             <Container>
                 <Row className="justify-content-md-center">
                     <Col md="auto">
                         <Table striped bordered hover>
                             <thead>
+                                <tr>
+                                    <th colSpan={3}><h3>Blog Clientes</h3></th>
+                                </tr>
+                            </thead>
+                            <thead>
+
                                 <tr>
                                     <th>Fecha</th>
                                     <th>Nombre</th>
