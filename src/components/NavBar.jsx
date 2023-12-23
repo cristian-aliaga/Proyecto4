@@ -22,7 +22,7 @@ export const NavBar = () => {
                             <NavDropdown.Item as={Link} to="/about">Sobre Nosotros</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/branches">Sucursales</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item as={Link} to="/blog">Bloc</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/blog">Blog</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>

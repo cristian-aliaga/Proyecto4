@@ -55,6 +55,7 @@ export const MenuComponent = () => {
                                 <tr>
                                     <th>Categoria</th>
                                     <th>Producto</th>
+                                    <th>Descripción</th>
                                     <th>Precio</th>
                                 </tr>
                             </thead>
@@ -64,6 +65,7 @@ export const MenuComponent = () => {
                                         <tr key={menu.id}>
                                             <td>{menu.categoria}</td>
                                             <td>{menu.nombre}</td>
+                                            <td>{menu.descripcion}</td>
                                             <td>{menu.precio}</td>
                                         </tr>
                                     ))
