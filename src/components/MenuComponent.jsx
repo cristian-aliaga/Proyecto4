@@ -44,12 +44,11 @@ export const MenuComponent = () => {
             <Container className='p-3'>
                 <Row className="justify-content-md-center">
                     <Col md="auto">
-                        <Dropdown onSelect={handleSelect} className='p-1'> 
+                        <Dropdown onSelect={handleSelect} className='p-1'>
                             <Dropdown.Toggle variant="secondary" id="dropdown-basic" >
                                 Categoría
                             </Dropdown.Toggle>
                             <Dropdown.Menu>
-                                <Dropdown.Item eventKey={''}>Todo</Dropdown.Item>
                                 <Dropdown.Item eventKey={'Aperitivo'}>Aperitivos</Dropdown.Item>
                                 <Dropdown.Item eventKey={'Entradas'}>Entradas</Dropdown.Item>
                                 <Dropdown.Item eventKey={'Fondo'}>Fondos</Dropdown.Item>
