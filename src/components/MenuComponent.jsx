@@ -41,10 +41,10 @@ export const MenuComponent = () => {
 
     return (
         <>
-            <Container>
+            <Container className='p-3'>
                 <Row className="justify-content-md-center">
                     <Col md="auto">
-                        <Dropdown onSelect={handleSelect}>
+                        <Dropdown onSelect={handleSelect} className='p-1'> 
                             <Dropdown.Toggle variant="secondary" id="dropdown-basic" >
                                 Categoría
                             </Dropdown.Toggle>

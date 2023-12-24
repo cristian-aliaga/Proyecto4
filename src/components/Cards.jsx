@@ -15,7 +15,7 @@ export const Cards = () => {
                     </Card.Text>
                 </Card.Body>
                 <Card.Footer className="rounded mx-auto">
-                    <Button variant="dark" href='/#book'>Reservar</Button>
+                    <Button variant="dark" href='/Proyecto4/#book'>Reservar</Button>
                 </Card.Footer>
             </Card>
             <Card className="bg-secondary">
@@ -27,7 +27,7 @@ export const Cards = () => {
                     </Card.Text>
                 </Card.Body>
                 <Card.Footer className="rounded mx-auto">
-                    <Button variant="dark" href='/#book'>Reservar</Button>
+                    <Button variant="dark" href='/Proyecto4/#book'>Reservar</Button>
                 </Card.Footer>
             </Card>
             <Card className="bg-secondary">
@@ -39,7 +39,7 @@ export const Cards = () => {
                     </Card.Text>
                 </Card.Body>
                 <Card.Footer className="rounded mx-auto">
-                    <Button variant="dark" href='/#book'>Reservar</Button>
+                    <Button variant="dark" href='/Proyecto4/#book'>Reservar</Button>
                 </Card.Footer>
             </Card>
         </CardGroup>

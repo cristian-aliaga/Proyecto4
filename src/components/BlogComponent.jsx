@@ -36,7 +36,7 @@ export const BlogComponent = () => {
 
     return (
         <>
-            <Container>
+            <Container className='p-5'>
                 <Row className="justify-content-md-center">
                     <Col md="auto">
                         <Table striped bordered hover>
