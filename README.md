@@ -24,11 +24,15 @@ interfaces de usuario, y GitHub Pages para la publicación del sitio.
 
 ### Layout: 
 
-1. Home:
+1. Home: Página principal.
 2. Reserva: En construcción.
 3. Carta/Menú: Despliega información del menú con un filtro con categoría.
 4. Contacto: Permite realizar una consulta, sugerencia o reclamo.
 5. Nosotros/Suscursales/Blog: Información About Us, ubicación de las sucursales, y un blog con comentarios de los usuarios.
 
 >Nota:
->>Reserva presenta problemas.
+>>Reserva presenta problemas, en proceso de corrección.
+
+# Firebase
+La aplicación almacenará los datos del Menú, reservas y Blog, en una Base de Datos NoSQL en Firebase.
+![Prototipo](./public/images/fire1.jpg)
