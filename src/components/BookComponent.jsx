@@ -31,8 +31,8 @@ export const BookComponent = () => {
                         <Calendar value={dateState} onChange={changeDate} />
                     </Col>
                     <Col md="auto" className="justify-content-md-center m-5">
+                        <h4>Fecha Seleccionada: {moment(dateState).format('MMMM Do YYYY')}</h4>
                         <h4>Hora Seleccionada: {hour}</h4>
-                        <h4>Fecha Seleccionada: <b>{moment(dateState).format('MMMM Do YYYY')}</b></h4>
                         <TimePicker onChange={onHour} value={hour} />
                         <InputGroup className="mb-3">
                             <InputGroup.Text id="inputGroup-sizing-default">
